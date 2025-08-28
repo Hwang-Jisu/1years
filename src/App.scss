@@ -1,0 +1,121 @@
+
+body {
+  margin: 0;
+  background-color: #fffaf7;
+  overflow-x: hidden;
+}
+
+.App {
+  min-height: 100vh;
+  text-align: center;
+
+  .cover {
+    background-color: #fef4f1;
+    padding: 5rem 1rem 10rem;
+    position: relative;
+
+    h1 {
+      position: relative;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      z-index: 999;
+    }
+
+    img {
+      width: 80%;
+      max-width: 300px;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 3rem;
+    }
+    p:nth-of-type(1) {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .date {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .content {
+    margin: 20rem 1rem;
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 5rem;
+      color: #333;
+    }
+
+    .days {
+      font-size: 3rem;
+      color: #333;
+    }
+  }
+
+  .gallery {
+    background-color: #fef4f1;
+    padding: 5rem 1rem;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-size: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    .photos {
+      display: flex;
+      overflow-x: scroll;
+      gap: 1rem;
+      padding-bottom: 1rem;
+
+      img {
+        width: 80vw;
+        max-width: 300px;
+        border-radius: 12px;
+      }
+
+      .caption {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  .message {
+    padding: 7rem 1rem;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 1.6;
+    }
+  }
+
+  footer {
+    padding: 3rem;
+    background-color: #fef4f1;
+    font-size: 2rem;
+  }
+}
+
+// falling hearts style
+.heart {
+  position: fixed;
+  top: 0;
+  left: 10%;
+  font-size: 2rem;
+  user-select: none;
+  animation-timing-function: linear;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: .5;
+}
